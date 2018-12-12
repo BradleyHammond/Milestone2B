@@ -9,6 +9,7 @@ import Create from './components/Create.vue';
 import Edit from './components/Edit.vue';
 import Index from './components/Index.vue';
 import Posts from './components/Posts.vue';
+import Comment from './components/Comment.vue';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/nprogress/nprogress.css'
@@ -38,6 +39,11 @@ const routes = [
     name: 'Posts',
     path: '/posts/:id',
     component: Posts
+  },
+  {
+    name: 'Comment',
+    path: '/posts/:id/comment/',
+    component: Comment
   },
 ];
 
