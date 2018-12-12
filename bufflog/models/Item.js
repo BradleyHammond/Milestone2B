@@ -14,7 +14,11 @@ var Item = new Schema({
   },
   content: {
     type: String
+  },
+  comment: {
+    type: []
   }
+
   
 },{
     collection: 'items'
