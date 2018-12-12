@@ -50,6 +50,7 @@ itemRoutes.route('/update/:id').post(function (req, res) {
       item.author = req.body.author;
       item.date = req.body.date;
       item.content = req.body.content;
+      item.comment = req.body.comment;
    
       item.save().then(item => {
           res.json('Update complete');
