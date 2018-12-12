@@ -8,9 +8,13 @@
             <h3>BY: {{item.author}}</h3>
             <h3>DATE: {{item.date}}</h3>
             <p> {{item.content}}</p>
-    
-            
+            <h3>Comments: </h3>
+            <router-link :to="{name: 'Comment', params: { id: item._id }}" class="btn btn-primary">Comment</router-link>
 
+            <p> {{item.comment}}</p>
+
+            
+            
         
             
             </div>
